@@ -17,9 +17,9 @@ def nodule_predict(input_image, option):
     # net = R2AttU_Net()
     # net = R2U_Net()
     if option == '模型A':
-        net = torch.load('checkpoints/unet_new.pt')
+        net = torch.load('checkpoints/unet_new.pt', map_location=device)
     elif option == '模型B':
-        net = torch.load('checkpoints/att_unet_scAG_PT.pt')
+        net = torch.load('checkpoints/att_unet_scAG_PT.pt', map_location=device)
     net.to(device=device)
     # net.load_state_dict(torch.load('checkpoints/att_unet_scAG.pth', map_location=device))  # todo
     net.eval()
