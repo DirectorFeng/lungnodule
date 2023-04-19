@@ -4,12 +4,10 @@ import pandas as pd
 import streamlit as st
 import os
 from os.path import join
-import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn.functional as F
 from torchvision.transforms import transforms
-from PIL import Image
 
 
 colors = [(0, 0, 255), '红',
