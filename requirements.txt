@@ -5,3 +5,4 @@ pandas==1.5.3
 torchvision==0.14.1
 torch==1.13.1
 pillow==9.4.0
+segmentation-models-pytorch==0.3.2
