@@ -113,7 +113,7 @@ if upload_file is not None:
                 cx = int(M['m10'] / M['m00'])
                 cy = int(M['m01'] / M['m00'])
                 print(f'{colors[(i * 2 + 1) % len(colors)]}色框区域结节的质心为：[{cx}, {cy}]')
-                diam = round(math.sqrt(4 * area / math.pi), 1)
+                diam = round(math.sqrt(4 * area / math.pi), 1) / 1.25
                 types = ""
                 if diam < 5.0:
                     types = '微小结节'
