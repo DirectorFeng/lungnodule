@@ -119,9 +119,8 @@ if upload_file is not None:
                     types = '微小结节'
                 elif 5.0 <= diam < 10.0:
                     types = "小结节"
-                elif 10.0 <= diam < 20.0:
-                    types = "中型结节"
-                elif 20.0 <= diam < 30.0:
+              
+                elif 10.0 <= diam < 30.0:
                     types = "大结节"
                 elif diam >= 30.0:
                     types = "肺肿块"
